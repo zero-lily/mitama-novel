@@ -1,0 +1,5 @@
+# このディレクトリに画像ファイルを配置してください
+# - characters/ - キャラクター画像
+# - gallery/ - ギャラリー画像（thumb-*.jpg, full-*.jpg）
+# - og-image.jpg - OGP用画像（1200x630px推奨）
+

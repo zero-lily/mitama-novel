@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="g" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbcfe8"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <radialGradient id="r" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="#0f0c1d"/>
+  <rect width="800" height="1000" fill="url(#g)" opacity="0.35"/>
+  <circle cx="180" cy="160" r="260" fill="url(#r)" opacity="0.55"/>
+  <circle cx="650" cy="220" r="220" fill="url(#r)" opacity="0.45"/>
+  <circle cx="400" cy="760" r="320" fill="url(#r)" opacity="0.35"/>
+  <rect x="120" y="150" width="560" height="700" rx="40" ry="40" fill="rgba(12,12,24,0.6)" stroke="rgba(255,255,255,0.25)" stroke-width="6"/>
+  <g fill="#f8fafc" font-family="Segoe UI, 'Zen Maru Gothic', sans-serif" text-anchor="middle">
+    <text x="400" y="450" font-size="42" font-weight="700">Key Visual Placeholder</text>
+    <text x="400" y="510" font-size="24" opacity="0.8">キービジュアルを配置してください</text>
+  </g>
+</svg>
+
+

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ノベルゲーム「みたまノベル」の公式ティザーサイト">
+  
+  <!-- OGP -->
+  <meta property="og:title" content="みたまノベル - 公式ティザーサイト">
+  <meta property="og:description" content="ノベルゲーム「みたまノベル」の公式ティザーサイト">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://your-username.github.io/mitama-novel/assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <title>みたまノベル - 公式ティザーサイト</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css?v=5">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body class="bg-surface text-slate-800">
+  <div class="bg-pattern"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 nav-blur">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold flex items-center gap-3">
+          <span class="logo-mark">MN</span>
+          <span>みたまノベル</span>
+        </div>
+        <ul class="hidden md:flex space-x-6 text-sm font-medium">
+          <li><a href="#hero" class="nav-link hover:text-accent transition">HOME</a></li>
+          <li><a href="#news" class="nav-link hover:text-accent transition">NEWS</a></li>
+          <li><a href="#story" class="nav-link hover:text-accent transition">STORY</a></li>
+          <li><a href="#characters" class="nav-link hover:text-accent transition">CHARACTERS</a></li>
+          <li><a href="#features" class="nav-link hover:text-accent transition">FEATURES</a></li>
+          <li><a href="#gallery" class="nav-link hover:text-accent transition">GALLERY</a></li>
+          <li><a href="#product" class="nav-link hover:text-accent transition">PRODUCT</a></li>
+          <li><a href="#cast" class="nav-link hover:text-accent transition">CAST</a></li>
+        </ul>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#product" class="gradient-btn">予約する</a>
+        </div>
+        <button id="menu-toggle" class="md:hidden text-2xl">☰</button>
+      </div>
+      <ul id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 glass p-4 rounded-2xl">
+        <li><a href="#hero" class="block py-2 hover:text-accent transition">HOME</a></li>
+        <li><a href="#news" class="block py-2 hover:text-accent transition">NEWS</a></li>
+        <li><a href="#story" class="block py-2 hover:text-accent transition">STORY</a></li>
+        <li><a href="#characters" class="block py-2 hover:text-accent transition">CHARACTERS</a></li>
+        <li><a href="#features" class="block py-2 hover:text-accent transition">FEATURES</a></li>
+        <li><a href="#gallery" class="block py-2 hover:text-accent transition">GALLERY</a></li>
+        <li><a href="#product" class="block py-2 hover:text-accent transition">PRODUCT</a></li>
+        <li><a href="#cast" class="block py-2 hover:text-accent transition">CAST</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex items-center relative overflow-hidden">
+    <div class="absolute inset-0 hero-overlay"></div>
+    <div class="container mx-auto px-4 pt-28 pb-16 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="space-y-6 text-slate-800">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium hero-chip">
+            <span class="dot"></span>
+            2026年 発売予定
+          </div>
+          <h1 class="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
+            みたまノベル
+            <span class="block text-2xl md:text-3xl text-accent font-bold mt-3">キミの物語が、ここから始まる</span>
+          </h1>
+          <p class="text-lg text-slate-700 leading-relaxed max-w-2xl">
+            記憶を失った少女「かすみみたま」と主人公の変化するマルチエンディングストーリー。
+          </p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="chip">Windows 10/11</span>
+            <span class="chip">ビジュアルノベル</span>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#product" class="gradient-btn text-center">予約する</a>
+            <a href="#news" class="outline-btn text-center">最新情報を見る</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="hero-visual">
+            <div class="visual-frame">
+              <div class="visual-glow"></div>
+              <img src="assets/images/characters/通常.png" alt="かすみみたま キービジュアル" class="visual-img">
+            </div>
+            <div class="floating-badge">
+              <span class="text-sm">Featuring</span>
+              <div class="text-lg font-bold">かすみみたま</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">NEWS</span>
+        <h2 class="section-title">最新情報</h2>
+        <p class="section-sub">リリースやイベントのお知らせを更新中</p>
+      </div>
+      <div id="news-list" class="max-w-4xl mx-auto space-y-4">
+        <!-- News items will be loaded from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section id="story" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">STORY</span>
+        <h2 class="section-title">物語</h2>
+        <p class="section-sub">青森を巡る恋人旅行は、いつのまにか “商品開発の旅” に。</p>
+      </div>
+      <div class="max-w-5xl mx-auto glass p-8 rounded-3xl space-y-4 leading-relaxed text-slate-700">
+        <p class="text-xl font-semibold">「どこ行こっか？今日はボクが、キミを連れ出しちゃう番だね！」</p>
+        <p>ひょんなことから人の姿になった、おにぎり屋の看板娘「かすみみたま」。</p>
+        <p>物産展の出展案内をきっかけに、新商品を探す旅へ。青森の観光地を巡りながら、ふたりの距離も近づいていく。</p>
+        <p>左右から囁かれるASMR演出と、選択やタッチで変わる親密度。結末はキミ次第。</p>
+        <p class="text-xl font-semibold text-accent">――甘くて、すこし切ない。雪の街でつむぐ恋と、あたたかいごはんの物語。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Characters Section -->
+  <section id="characters" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">CHARACTERS</span>
+        <h2 class="section-title">キャラクター</h2>
+        <p class="section-sub">立ち絵とボイスで世界観を体験</p>
+      </div>
+      <div id="characters-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Characters will be loaded from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">FEATURES</span>
+        <h2 class="section-title">ゲームの特徴</h2>
+        <p class="section-sub">耳元ASMR、観光デート、親密度システム、マルチエンディング</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div class="feature-card">
+          <div class="icon-circle">🎧</div>
+          <h3 class="text-xl font-bold mb-2">ASMR演出</h3>
+          <p class="text-slate-700 text-sm leading-relaxed">イヤホン推奨のささやき演出。左右から届く声で、ふたりきりの時間を。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">🗺️</div>
+          <h3 class="text-xl font-bold mb-2">観光デート</h3>
+          <p class="text-slate-700 text-sm leading-relaxed">青森を巡るデートプラン。ねぶた、奥入瀬渓流、弘前公園…想い出を重ねよう。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">💝</div>
+          <h3 class="text-xl font-bold mb-2">親密度システム</h3>
+          <p class="text-slate-700 text-sm leading-relaxed">アイテムやタッチで親密度上昇。みたまの反応と台詞が変化。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">🎯</div>
+          <h3 class="text-xl font-bold mb-2">マルチエンディング</h3>
+          <p class="text-slate-700 text-sm leading-relaxed">親密度と選択で結末が分岐。あなた次第で未来が変わる。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">GALLERY</span>
+        <h2 class="section-title">ギャラリー</h2>
+        <p class="section-sub">スチル・イベントCGを先行公開</p>
+      </div>
+      <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <!-- Gallery items will be loaded from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section id="product" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">PRODUCT</span>
+        <h2 class="section-title">製品情報</h2>
+        <p class="section-sub">プラットフォーム・価格・エディション</p>
+      </div>
+      <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+        <div class="product-card md:col-span-2">
+          <h3 class="text-2xl font-bold mb-4">みたまノベル</h3>
+          <table class="w-full text-left text-sm md:text-base">
+            <tr class="border-b border-white/40">
+              <td class="py-3 font-semibold text-slate-700">ジャンル</td>
+              <td class="py-3 text-slate-800">ビジュアルノベル</td>
+            </tr>
+            <tr class="border-b border-white/40">
+              <td class="py-3 font-semibold text-slate-700">対応予定機種</td>
+              <td class="py-3 text-slate-800"> Windows 10/11</td>
+            </tr>
+            <tr class="border-b border-white/40">
+              <td class="py-3 font-semibold text-slate-700">発売日</td>
+              <td class="py-3 text-slate-800">2026年春 発売予定</td>
+            </tr>
+            <tr class="border-b border-white/40">
+              <td class="py-3 font-semibold text-slate-700">価格</td>
+              <td class="py-3 text-slate-800 space-y-1">
+                <div>通常版：3,828円（税込）</div>
+                <div>完全生産限定版：9,900円（税込）</div>
+                <div>ダウンロード版：6,578円（税込）</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="product-card flex flex-col gap-4">
+          <div>
+            <div class="text-sm text-slate-500">購入</div>
+            <div class="text-xl font-bold text-slate-800">かすみみたまの雑貨屋さん
+            </div>
+          </div>
+          <a href="https://kasumimitama.booth.pm/" class="gradient-btn text-center w-full">購入はこちら</a>
+          <div class="text-xs text-slate-500 leading-relaxed">
+            素材・情報等はすべて開発中のものであり、予告なく変更される場合があります。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cast Section -->
+  <section id="cast" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">CAST</span>
+        <h2 class="section-title">主演</h2>
+        <p class="section-sub">かすみみたまを演じる</p>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <div class="glass p-8 md:p-12 rounded-3xl">
+          <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="flex-shrink-0">
+              <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img src="assets/images/characters/通常.png" alt="かすみみたま" class="w-full h-full object-cover object-top">
+              </div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+              <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">かすみみたま</h3>
+              <p class="text-lg text-slate-700 mb-6 leading-relaxed">
+                ノベルゲーム「みたまノベル」の主人公を演じる、かすみみたまです。<br>
+                近所の神社に住んでいた元猫の美少女として、記憶を失った少女の役を演じています。
+              </p>
+              <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                <a href="https://www.youtube.com/channel/UC5RTWIYDif9txemHybgy5nw" target="_blank" rel="noreferrer noopener" class="outline-btn flex items-center gap-2">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                  YouTube
+                </a>
+                <a href="https://x.com/kasumi_mitama" target="_blank" rel="noreferrer noopener" class="outline-btn flex items-center gap-2">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                  X (Twitter)
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-footer py-10">
+    <div class="container mx-auto px-4 text-center space-y-3">
+      <div class="flex justify-center gap-3 text-sm text-gray-300">
+        <span>© 2026 みたまノベル</span>
+        <span>All Rights Reserved.</span>
+      </div>
+      <p class="text-gray-400 text-xs">素材・情報等はすべて開発中のものであり、予告なく変更される場合がございます。</p>
+    </div>
+  </footer>
+
+  <!-- Gallery Modal -->
+  <div id="gallery-modal" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center">
+    <button id="modal-close" class="absolute top-4 right-4 text-4xl hover:text-purple-400 transition">×</button>
+    <img id="modal-image" src="" alt="" class="max-w-4xl max-h-[90vh] object-contain">
+  </div>
+
+  <!-- JavaScript -->
+  <script src="main.js?v=3"></script>
+</body>
+</html>
+

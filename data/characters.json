@@ -1,0 +1,15 @@
+[
+  {
+    "name": "かすみみたま",
+    "description": "近所の神社に住んでいた元猫の美少女。ある日ふらっと「キミ」の前に現れ、おにぎり屋で居候生活をスタート。今では一緒に店を切り盛りする、いたずら好きで不思議なカノジョ。",
+    "image": "assets/images/characters/通常.png",
+    "voice": "assets/audio/mitama-voice-1.ogg"
+  },
+  {
+    "name": "主人公",
+    "description": "おにぎり屋を営む青年。みたまとの出会いをきっかけに、新しい商品開発に挑戦することになる。",
+    "image": "assets/images/characters/protagonist.png",
+    "voice": null
+  }
+]
+
