@@ -1,3 +1,62 @@
+// Password Protection
+const AUTH_PASSWORD = 'mitama2026'; // パスワードを変更してください
+const AUTH_KEY = 'mitama_auth';
+
+// Check authentication on page load
+function checkAuth() {
+  const authStatus = sessionStorage.getItem(AUTH_KEY);
+  const authModal = document.getElementById('auth-modal');
+  const mainContent = document.getElementById('main-content');
+  
+  if (authStatus === 'authenticated') {
+    authModal.classList.add('hidden');
+    mainContent.classList.remove('hidden');
+  } else {
+    authModal.classList.remove('hidden');
+    mainContent.classList.add('hidden');
+  }
+}
+
+// Handle authentication form
+function initAuth() {
+  checkAuth();
+  
+  const authForm = document.getElementById('auth-form');
+  const passwordInput = document.getElementById('password-input');
+  const authError = document.getElementById('auth-error');
+  const authModal = document.getElementById('auth-modal');
+  const mainContent = document.getElementById('main-content');
+  
+  if (authForm) {
+    authForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const password = passwordInput.value;
+      
+      if (password === AUTH_PASSWORD) {
+        sessionStorage.setItem(AUTH_KEY, 'authenticated');
+        authModal.classList.add('hidden');
+        mainContent.classList.remove('hidden');
+        authError.classList.add('hidden');
+        passwordInput.value = '';
+        // Load content after authentication
+        loadNews();
+        loadCharacters();
+        loadGallery();
+      } else {
+        authError.textContent = 'パスワードが正しくありません';
+        authError.classList.remove('hidden');
+        passwordInput.value = '';
+        passwordInput.focus();
+      }
+    });
+    
+    // Focus on password input when modal is shown
+    if (!sessionStorage.getItem(AUTH_KEY)) {
+      passwordInput.focus();
+    }
+  }
+}
+
 // Navigation
 const navbar = document.getElementById('navbar');
 const menuToggle = document.getElementById('menu-toggle');
@@ -279,9 +338,14 @@ document.addEventListener('keydown', (e) => {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-  loadNews();
-  loadCharacters();
-  loadGallery();
+  initAuth();
+  
+  // Only load content if authenticated
+  if (sessionStorage.getItem(AUTH_KEY) === 'authenticated') {
+    loadNews();
+    loadCharacters();
+    loadGallery();
+  }
   
   // Make openModal available globally
   window.openModal = openModal;
