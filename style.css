@@ -157,23 +157,24 @@ body {
 
 .hero-visual {
   position: relative;
-  width: min(800px, 95vw);
+  width: min(900px, 95vw);
   margin: 0 auto;
 }
 .visual-frame {
   position: relative;
   border-radius: 24px;
-  overflow: hidden;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), #f7f9ff);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  overflow: visible;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 .visual-img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
-  aspect-ratio: 3 / 4;
-  opacity: 0.98;
+  object-position: center bottom;
+  display: block;
+  filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.15));
 }
 .visual-glow {
   position: absolute;
@@ -235,9 +236,41 @@ body {
   box-shadow: 0 14px 34px rgba(255, 143, 177, 0.24);
 }
 
-/* News section background */
+/* Section backgrounds */
+#hero {
+  background: linear-gradient(180deg, #ffffff 0%, #fdfaff 100%);
+}
+
 #news {
+  background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 100%);
+}
+
+#cast {
+  background: linear-gradient(180deg, #ffffff 0%, #fff7fb 100%);
+}
+
+#story {
+  background: linear-gradient(180deg, #fff7fb 0%, #f6f8ff 100%);
+}
+
+#characters {
+  background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 100%);
+}
+
+#features {
   background: linear-gradient(180deg, #ffffff 0%, #f6f8ff 100%);
+}
+
+#gallery {
+  background: linear-gradient(180deg, #f6f8ff 0%, #fff7fb 100%);
+}
+
+#product {
+  background: linear-gradient(180deg, #fff7fb 0%, #f6f8ff 100%);
+}
+
+#illustrator {
+  background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 100%);
 }
 
 .feature-card {
@@ -393,6 +426,13 @@ body {
 /* Cast Section */
 #cast {
   background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 100%);
+}
+
+/* Story Section Font */
+.story-text {
+  font-family: "Shippori Mincho", "Yu Mincho", "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  line-height: 2;
+  letter-spacing: 0.05em;
 }
 
 .bg-footer {

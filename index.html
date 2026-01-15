@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;700&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
@@ -122,7 +122,7 @@
             <div class="hero-visual">
               <div class="visual-frame">
                 <div class="visual-glow"></div>
-                <img src="assets/images/characters/通常.png" alt="かすみみたま キービジュアル" class="visual-img">
+                <img src="assets/images/characters/KV.png" alt="かすみみたま キービジュアル" class="visual-img">
               </div>
               <div class="floating-badge">
                 <span class="text-sm">Featuring</span>
@@ -153,15 +153,23 @@
       <div class="container mx-auto px-4">
         <div class="section-header">
           <span class="section-label">STORY</span>
-          <h2 class="section-title">物語</h2>
-          <p class="section-sub">青森を巡る恋人旅行は、いつのまにか “商品開発の旅” に。</p>
+          <h2 class="section-title">儚くも美しい『霞』のような物語。</h2>
         </div>
-        <div class="max-w-5xl mx-auto glass p-8 rounded-3xl space-y-4 leading-relaxed text-slate-700">
-          <p class="text-xl font-semibold">「どこ行こっか？今日はボクが、キミを連れ出しちゃう番だね！」</p>
-          <p>ひょんなことから人の姿になった、おにぎり屋の看板娘「かすみみたま」。</p>
-          <p>物産展の出展案内をきっかけに、新商品を探す旅へ。青森の観光地を巡りながら、ふたりの距離も近づいていく。</p>
-          <p>左右から囁かれるASMR演出と、選択やタッチで変わる親密度。結末はキミ次第。</p>
-          <p class="text-xl font-semibold text-accent">――甘くて、すこし切ない。雪の街でつむぐ恋と、あたたかいごはんの物語。</p>
+        <div class="max-w-6xl mx-auto glass p-8 md:p-12 rounded-3xl space-y-4 leading-relaxed text-slate-700 text-xl md:text-2xl story-text">
+          <p class="text-2xl md:text-3xl font-semibold">「私のお手伝いをしてください！」
+            </p>
+          <p>格安アパートに入居したあなたのもとに現れた「かすみみたま」という幽霊の少女。</p>
+            <p>同居の許可と引き換えに、生前の『記憶』探しの手伝いを頼まれる。</p>
+            <br>
+          <p>わずかに残る思い出を頼りに、彼女のゆかりの地を訪れながら、</p>
+          <p>何気ない会話をする中で「人間と幽霊」という関係が少しずつ揺らいでいく。</p>
+          <br>  
+          <p>軽快な幽霊ジョークにヒヤヒヤさせられながら、これからのことを考える。</p>
+          <p>記憶を取り戻した彼女は……いったいどうなるんだろう？</p>
+          <p>「あなたはちゃんと、人間と関わって生きていってください」</p>
+          <br>
+          <p class="text-2xl md:text-3xl font-semibold text-accent">幽霊は未練を断ち切って成仏するというけれど……</p>
+          <p class="text-2xl md:text-3xl font-semibold text-accent">ふたりの関係も同じように、ただ消えていくだけなんだろうか――</p>
         </div>
       </div>
     </section>
@@ -221,8 +229,12 @@
           <h2 class="section-title">ギャラリー</h2>
           <p class="section-sub">スチル・イベントCGを先行公開</p>
         </div>
-        <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <!-- Gallery items will be loaded from JSON -->
+        <div class="max-w-5xl mx-auto">
+          <div class="glass p-12 md:p-16 rounded-3xl text-center">
+            <div class="text-6xl md:text-8xl mb-6">🔒</div>
+            <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">COMING SOON</h3>
+            <p class="text-lg md:text-xl text-slate-600">イラストは準備中です。公開をお楽しみに！</p>
+          </div>
         </div>
       </div>
     </section>
@@ -289,7 +301,7 @@
             <div class="flex flex-col md:flex-row gap-8 items-center">
               <div class="flex-shrink-0">
                 <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                  <img src="assets/images/characters/通常.png" alt="かすみみたま" class="w-full h-full object-cover object-top">
+                  <img src="assets/images/icon/icon_mitama.png" alt="かすみみたま" class="w-full h-full object-cover object-center">
                 </div>
               </div>
               <div class="flex-1 text-center md:text-left">
@@ -309,6 +321,52 @@
                     YouTube
                   </a>
                   <a href="https://x.com/kasumi_mitama" target="_blank" rel="noreferrer noopener"
+                    class="outline-btn flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                    X (Twitter)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Illustrator Section -->
+    <section id="illustrator" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="section-header">
+          <span class="section-label">ILLUSTRATOR</span>
+          <h2 class="section-title">イラストレーター</h2>
+          <p class="section-sub">キャラクターデザイン・イラスト</p>
+        </div>
+        <div class="max-w-4xl mx-auto">
+          <div class="glass p-8 md:p-12 rounded-3xl">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+              <div class="flex-shrink-0">
+                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                  <img src="assets/images/icon/icon_kumin.png" alt="北爪くみん" class="w-full h-full object-cover object-center">
+                </div>
+              </div>
+              <div class="flex-1 text-center md:text-left">
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">北爪くみん</h3>
+                <p class="text-lg text-slate-700 mb-6 leading-relaxed">
+                  キャラクターデザイン・イラストを担当。
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                  <a href="https://www.youtube.com/channel/UCDdxgzgw2RGWluKcG7MAVRA" target="_blank"
+                    rel="noreferrer noopener" class="outline-btn flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                    YouTube
+                  </a>
+                  <a href="https://x.com/kitazume_kumin" target="_blank" rel="noreferrer noopener"
                     class="outline-btn flex items-center gap-2">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                       <path
