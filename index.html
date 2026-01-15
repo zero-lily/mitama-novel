@@ -27,7 +27,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -95,22 +95,22 @@
     <!-- Hero Section -->
     <section id="hero" class="min-h-screen flex items-center relative overflow-hidden">
       <div class="absolute inset-0 hero-overlay"></div>
-      <div class="container mx-auto px-4 pt-28 pb-16 relative z-10">
-        <div class="grid lg:grid-cols-2 gap-10 items-center">
-          <div class="space-y-6 text-slate-800">
+      <div class="container mx-auto px-2 lg:px-0 pt-28 pb-16 relative z-10 hero-container">
+        <div class="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+          <div class="space-y-4 text-slate-800">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium hero-chip">
               <span class="dot"></span>
               2026年 発売予定
             </div>
-            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
-              霞の向こうのみたまさん。
-              <span class="block text-2xl md:text-3xl text-accent font-bold mt-3">キミの物語が、ここから始まる</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg hero-title">
+              霞の向こうの<br>みたまさん。
+              <span class="block text-2xl md:text-4xl text-accent font-bold mt-3">ふたりの物語が、ここから始まる</span>
             </h1>
             <p class="text-lg text-slate-700 leading-relaxed max-w-2xl">
-              記憶を失った少女「かすみみたま」と主人公の変化するマルチエンディングストーリー。
+              記憶を失った少女「かすみみたま」と主人公のマルチエンディングストーリー。
             </p>
             <div class="flex flex-wrap items-center gap-3">
-              <span class="chip">Windows 10/11</span>
+              <span class="chip">Windows</span>
               <span class="chip">ビジュアルノベル</span>
             </div>
             <div class="flex flex-col sm:flex-row gap-4">
@@ -180,7 +180,6 @@
         <div class="section-header">
           <span class="section-label">CHARACTERS</span>
           <h2 class="section-title">キャラクター</h2>
-          <p class="section-sub">立ち絵とボイスで世界観を体験</p>
         </div>
         <div id="characters-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <!-- Characters will be loaded from JSON -->
@@ -189,37 +188,7 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="section-header">
-          <span class="section-label">FEATURES</span>
-          <h2 class="section-title">ゲームの特徴</h2>
-          <p class="section-sub">耳元ASMR、観光デート、親密度システム、マルチエンディング</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          <div class="feature-card">
-            <div class="icon-circle">🎧</div>
-            <h3 class="text-xl font-bold mb-2">ASMR演出</h3>
-            <p class="text-slate-700 text-sm leading-relaxed">イヤホン推奨のささやき演出。左右から届く声で、ふたりきりの時間を。</p>
-          </div>
-          <div class="feature-card">
-            <div class="icon-circle">🗺️</div>
-            <h3 class="text-xl font-bold mb-2">観光デート</h3>
-            <p class="text-slate-700 text-sm leading-relaxed">青森を巡るデートプラン。ねぶた、奥入瀬渓流、弘前公園…想い出を重ねよう。</p>
-          </div>
-          <div class="feature-card">
-            <div class="icon-circle">💝</div>
-            <h3 class="text-xl font-bold mb-2">親密度システム</h3>
-            <p class="text-slate-700 text-sm leading-relaxed">アイテムやタッチで親密度上昇。みたまの反応と台詞が変化。</p>
-          </div>
-          <div class="feature-card">
-            <div class="icon-circle">🎯</div>
-            <h3 class="text-xl font-bold mb-2">マルチエンディング</h3>
-            <p class="text-slate-700 text-sm leading-relaxed">親密度と選択で結末が分岐。あなた次第で未来が変わる。</p>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- Gallery Section -->
     <section id="gallery" class="py-20">
@@ -234,6 +203,129 @@
             <div class="text-6xl md:text-8xl mb-6">🔒</div>
             <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">COMING SOON</h3>
             <p class="text-lg md:text-xl text-slate-600">イラストは準備中です。公開をお楽しみに！</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cast Section -->
+    <section id="cast" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="section-header">
+          <span class="section-label">CAST</span>
+          <h2 class="section-title">主演</h2>
+          <p class="section-sub">かすみみたまを演じる</p>
+        </div>
+        <div class="max-w-4xl mx-auto">
+          <div class="glass p-8 md:p-12 rounded-3xl">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+              <div class="flex-shrink-0">
+                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                  <img src="assets/images/icon/icon_mitama.png" alt="かすみみたま" class="w-full h-full object-cover object-center">
+                </div>
+              </div>
+              <div class="flex-1 text-center md:text-left">
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">かすみみたま</h3>
+                <p class="text-lg text-slate-700 mb-6 leading-relaxed">
+                  かすみみたま役の、怪談系幽霊VTuberかすみみたまです！  <br>
+                  もしかしたらあるかもしれないifの世界の私を演じています。 <br>
+                  物語を通して、私の記憶を一緒に探してください！
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                  <a href="https://www.youtube.com/channel/UC5RTWIYDif9txemHybgy5nw" target="_blank"
+                    rel="noreferrer noopener" class="outline-btn flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                    YouTube
+                  </a>
+                  <a href="https://x.com/kasumi_mitama" target="_blank" rel="noreferrer noopener"
+                    class="outline-btn flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                    X (Twitter)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creators Section -->
+    <section id="creators" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="section-header">
+          <span class="section-label">CREATORS</span>
+          <h2 class="section-title">クリエイター</h2>
+          <p class="section-sub">イラストレーター / シナリオライター</p>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 creators-grid">
+          <div class="glass p-8 md:p-12 rounded-3xl creator-card">
+            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start creator-row">
+              <div class="flex-shrink-0">
+                <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                  <img src="assets/images/icon/icon_kumin.png" alt="北爪くみん" class="w-full h-full object-cover object-center">
+                </div>
+              </div>
+              <div class="flex-1 text-center md:text-left">
+                <div class="text-sm tracking-[0.2em] text-slate-500 mb-2 creator-role">ILLUSTRATOR</div>
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800 creator-name">北爪くみん</h3>
+                <p class="text-lg text-slate-700 mb-6 leading-relaxed creator-comment">
+                  キャラクターデザイン・イラストを担当。
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                  <a href="https://www.youtube.com/channel/UCDdxgzgw2RGWluKcG7MAVRA" target="_blank"
+                    rel="noreferrer noopener" class="outline-btn flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                    YouTube
+                  </a>
+                  <a href="https://x.com/kitazume_kumin" target="_blank" rel="noreferrer noopener"
+                    class="outline-btn flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                    X (Twitter)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="glass p-8 md:p-12 rounded-3xl creator-card">
+            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start creator-row">
+              <div class="flex-shrink-0">
+                <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                  <img src="assets/images/icon/icon_pyoi.jpeg" alt="浅倉ぴよい" class="w-full h-full object-cover object-center">
+                </div>
+              </div>
+              <div class="flex-1 text-center md:text-left">
+                <div class="text-sm tracking-[0.2em] text-slate-500 mb-2 creator-role">SCENARIO WRITER</div>
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800 creator-name">浅倉ぴよい</h3>
+                <p class="text-lg text-slate-700 mb-6 leading-relaxed creator-comment">
+                  かすみみたまさんのゲームシナリオを担当させていただきました。<br>
+                  独自の魅力をお持ちの方ですので、とっても楽しく、けれどどこかちょっと寂しく、物語を作り上げることができました。<br>
+                  『霞の向こうのみたまさん。』よろしくお願いいたします！
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                  <a href="https://x.com/pyo_pyoi_pyoi" target="_blank" rel="noreferrer noopener"
+                    class="outline-btn flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                    X (Twitter)
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -288,100 +380,6 @@
       </div>
     </section>
 
-    <!-- Cast Section -->
-    <section id="cast" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="section-header">
-          <span class="section-label">CAST</span>
-          <h2 class="section-title">主演</h2>
-          <p class="section-sub">かすみみたまを演じる</p>
-        </div>
-        <div class="max-w-4xl mx-auto">
-          <div class="glass p-8 md:p-12 rounded-3xl">
-            <div class="flex flex-col md:flex-row gap-8 items-center">
-              <div class="flex-shrink-0">
-                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                  <img src="assets/images/icon/icon_mitama.png" alt="かすみみたま" class="w-full h-full object-cover object-center">
-                </div>
-              </div>
-              <div class="flex-1 text-center md:text-left">
-                <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">かすみみたま</h3>
-                <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-                  かすみみたま役の、怪談系幽霊VTuberかすみみたまです！  <br>
-                  もしかしたらあるかもしれないifの世界の私を演じています。 <br>
-                  物語を通して、私の記憶を一緒に探してください！
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                  <a href="https://www.youtube.com/channel/UC5RTWIYDif9txemHybgy5nw" target="_blank"
-                    rel="noreferrer noopener" class="outline-btn flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path
-                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                    YouTube
-                  </a>
-                  <a href="https://x.com/kasumi_mitama" target="_blank" rel="noreferrer noopener"
-                    class="outline-btn flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path
-                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                    </svg>
-                    X (Twitter)
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Illustrator Section -->
-    <section id="illustrator" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="section-header">
-          <span class="section-label">ILLUSTRATOR</span>
-          <h2 class="section-title">イラストレーター</h2>
-          <p class="section-sub">キャラクターデザイン・イラスト</p>
-        </div>
-        <div class="max-w-4xl mx-auto">
-          <div class="glass p-8 md:p-12 rounded-3xl">
-            <div class="flex flex-col md:flex-row gap-8 items-center">
-              <div class="flex-shrink-0">
-                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                  <img src="assets/images/icon/icon_kumin.png" alt="北爪くみん" class="w-full h-full object-cover object-center">
-                </div>
-              </div>
-              <div class="flex-1 text-center md:text-left">
-                <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">北爪くみん</h3>
-                <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-                  キャラクターデザイン・イラストを担当。
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                  <a href="https://www.youtube.com/channel/UCDdxgzgw2RGWluKcG7MAVRA" target="_blank"
-                    rel="noreferrer noopener" class="outline-btn flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path
-                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                    YouTube
-                  </a>
-                  <a href="https://x.com/kitazume_kumin" target="_blank" rel="noreferrer noopener"
-                    class="outline-btn flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path
-                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                    </svg>
-                    X (Twitter)
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer class="bg-footer py-10">
       <div class="container mx-auto px-4 text-center space-y-3">
@@ -402,7 +400,7 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="main.js?v=4"></script>
+  <script src="main.js?v=5"></script>
 </body>
 
 </html>

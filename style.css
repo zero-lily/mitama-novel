@@ -23,6 +23,11 @@ body {
   color: var(--text);
   position: relative;
   overflow-x: hidden;
+  font-size: 17px;
+}
+
+.container {
+  max-width: 1600px;
 }
 
 .bg-surface {
@@ -61,6 +66,15 @@ body {
   border-bottom: 1px solid var(--border);
   box-shadow: 0 10px 30px rgba(152, 169, 205, 0.18);
   transition: box-shadow 0.3s ease;
+}
+
+nav .nav-link {
+  font-size: 0.95rem;
+}
+
+nav .gradient-btn {
+  padding: 14px 26px;
+  font-size: 0.95rem;
 }
 
 .nav-link.active {
@@ -155,9 +169,32 @@ body {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.9));
 }
 
+.hero-container {
+  max-width: 1600px;
+}
+
+.hero-title {
+  white-space: normal;
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    letter-spacing: 0;
+  }
+}
+
+
 .hero-visual {
   position: relative;
-  width: min(900px, 95vw);
+  width: min(1120px, 98vw);
   margin: 0 auto;
 }
 .visual-frame {
@@ -199,6 +236,16 @@ body {
   text-align: center;
   margin-bottom: 24px;
 }
+.section-header::after {
+  content: "";
+  display: block;
+  width: 88px;
+  height: 2px;
+  margin: 16px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  opacity: 0.7;
+}
 .section-label {
   display: inline-block;
   padding: 6px 14px;
@@ -206,7 +253,7 @@ body {
   background: linear-gradient(120deg, #fff7fb, #e9f2ff);
   border: 1px solid var(--border);
   font-size: 0.85rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   color: #475569;
 }
 .section-title {
@@ -214,10 +261,14 @@ body {
   font-weight: 800;
   margin: 12px 0 4px;
   color: #1f2937;
+  font-family: "Shippori Mincho", "Yu Mincho", "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  letter-spacing: 0.04em;
+  text-shadow: 0 8px 24px rgba(31, 41, 55, 0.08);
 }
 .section-sub {
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
 }
 
 .news-item {
@@ -245,6 +296,26 @@ body {
   background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 100%);
 }
 
+#news .section-title {
+  font-size: clamp(40px, 5vw, 52px);
+}
+
+#news .section-sub {
+  font-size: 1.12rem;
+}
+
+.news-item {
+  padding: 26px;
+}
+
+.news-item h3 {
+  font-size: 1.35rem;
+}
+
+.news-item p {
+  font-size: 1.12rem;
+}
+
 #cast {
   background: linear-gradient(180deg, #ffffff 0%, #fff7fb 100%);
 }
@@ -269,7 +340,7 @@ body {
   background: linear-gradient(180deg, #fff7fb 0%, #f6f8ff 100%);
 }
 
-#illustrator {
+#creators {
   background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 100%);
 }
 
@@ -339,6 +410,16 @@ body {
 .character-card img.character-bustup:hover {
   transform: scale(1.02);
 }
+.character-card img.character-regular {
+  height: 500px;
+  object-fit: cover;
+  object-position: center 15%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.character-card img.character-regular:hover {
+  transform: scale(1.02);
+}
 
 .gallery-item {
   cursor: pointer;
@@ -378,6 +459,36 @@ body {
 }
 .gallery-item:hover img {
   transform: scale(1.05);
+}
+
+/* Creators */
+.creator-role {
+  letter-spacing: 0.24em;
+}
+.creator-name {
+  font-family: "Shippori Mincho", "Yu Mincho", "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  letter-spacing: 0.06em;
+}
+.creator-comment {
+  font-size: 0.98rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+.creators-grid {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .creators-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+.creator-row {
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .creator-row {
+    align-items: flex-start;
+  }
 }
 
 /* Modal */

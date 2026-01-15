@@ -171,20 +171,26 @@ async function loadCharacters() {
     const response = await fetch('data/characters.json');
     const characters = await response.json();
     const charactersList = document.getElementById('characters-list');
-    
+
+    const formatDescription = (text) => {
+      if (!text) return '';
+      const sentences = text.split('。').map(s => s.trim()).filter(Boolean);
+      return sentences.map(s => `${s}。`).join('<br>');
+    };
+
     charactersList.innerHTML = characters.map(char => {
       const isBustUp = char.name === 'かすみみたま';
       return `
       <div class="character-card p-6 rounded-lg fade-on-scroll">
         <div class="mb-4">
           <img src="${char.image}" alt="${char.name}" 
-               class="w-full ${isBustUp ? 'character-bustup' : 'h-64 object-cover'} rounded-lg mb-4"
+               class="w-full ${isBustUp ? 'character-bustup' : 'character-regular'} rounded-lg mb-4"
                onclick="openModal('${char.image}', '${char.name}')"
                onerror="this.src='assets/images/placeholder.svg'"
                style="${isBustUp ? 'cursor: pointer;' : ''}">
         </div>
         <h3 class="text-2xl font-bold mb-2">${char.name}</h3>
-        <p class="text-slate-700 mb-4">${char.description}</p>
+        <p class="text-slate-700 mb-4">${formatDescription(char.description)}</p>
         ${char.voice ? `
           <div class="audio-player">
             <button class="audio-btn" onclick="playAudio('${char.voice}', this)">
@@ -342,9 +348,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Only load content if authenticated
   if (sessionStorage.getItem(AUTH_KEY) === 'authenticated') {
-    loadNews();
-    loadCharacters();
-    loadGallery();
+  loadNews();
+  loadCharacters();
+  loadGallery();
   }
   
   // Make openModal available globally
