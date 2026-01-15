@@ -3,7 +3,7 @@
     "name": "かすみみたま",
     "description": "あなたが入居したアパートに住んでいる幽霊の少女。あどけなさを残す見た目に反して、どこか世界を達観しているように見える。ちょっと毒舌。生前の出来事をほとんど覚えておらず、主人公に対し、アパートで同居することと引き換えに『記憶』探しの手伝いを依頼する",
     "image": "assets/images/characters/通常.png",
-    "voice": "assets/audio/mitama-voice-1.ogg"
+    "voice": null
   },
   {
     "name": "あなた",

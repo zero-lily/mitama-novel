@@ -328,6 +328,15 @@ nav .gradient-btn {
   background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 100%);
 }
 
+#characters-list {
+  justify-items: center;
+}
+
+.character-card {
+  width: 100%;
+  max-width: 360px;
+}
+
 #features {
   background: linear-gradient(180deg, #ffffff 0%, #f6f8ff 100%);
 }
