@@ -287,7 +287,7 @@ document.addEventListener('keydown', (e) => {
 document.addEventListener('DOMContentLoaded', () => {
   loadNews();
   loadCharacters();
-  loadGallery();
+  // loadGallery(); // Gallery is showing "Coming Soon" message
   
   // Make openModal available globally
   window.openModal = openModal;

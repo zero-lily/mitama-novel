@@ -214,11 +214,7 @@ nav .gradient-btn {
   filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.15));
 }
 .visual-glow {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, rgba(255, 143, 177, 0.32), rgba(126, 200, 255, 0.28));
-  mix-blend-mode: screen;
-  pointer-events: none;
+  display: none;
 }
 .floating-badge {
   position: absolute;
