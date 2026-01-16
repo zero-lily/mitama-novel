@@ -196,6 +196,7 @@ nav .gradient-btn {
   position: relative;
   width: min(1120px, 98vw);
   margin: 0 auto;
+  max-height: 90vh;
 }
 .visual-frame {
   position: relative;
@@ -210,6 +211,7 @@ nav .gradient-btn {
 .visual-img {
   width: 100%;
   height: auto;
+  max-height: 90vh;
   object-fit: contain;
   object-position: center center;
   display: block;
@@ -288,6 +290,7 @@ nav .gradient-btn {
 /* Section backgrounds */
 #hero {
   background: linear-gradient(180deg, #ffffff 0%, #fdfaff 100%);
+  overflow: visible;
 }
 
 #hero .hero-visual {
