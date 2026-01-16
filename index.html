@@ -34,24 +34,7 @@
 </head>
 
 <body class="bg-surface text-slate-800">
-  <!-- Password Protection Modal -->
-  <div id="auth-modal" class="fixed inset-0 bg-black/90 z-[100] flex items-center justify-center">
-    <div class="glass p-8 md:p-12 rounded-3xl max-w-md w-full mx-4">
-      <h2 class="text-3xl font-bold mb-2 text-center text-slate-800">アクセス認証</h2>
-      <p class="text-slate-600 text-center mb-6">このサイトを閲覧するにはパスワードが必要です</p>
-      <form id="auth-form" class="space-y-4">
-        <div>
-          <input type="password" id="password-input" placeholder="パスワードを入力"
-            class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-            autocomplete="off" required>
-        </div>
-        <div id="auth-error" class="text-red-500 text-sm hidden"></div>
-        <button type="submit" class="gradient-btn w-full text-center">認証</button>
-      </form>
-    </div>
-  </div>
-
-  <div id="main-content" class="hidden">
+  
     <div class="bg-pattern"></div>
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
@@ -390,8 +373,6 @@
         <p class="text-gray-400 text-xs">素材・情報等はすべて開発中のものであり、予告なく変更される場合がございます。</p>
       </div>
     </footer>
-
-  </div> <!-- End of main-content -->
 
   <!-- Gallery Modal -->
   <div id="gallery-modal" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center">
