@@ -170,7 +170,7 @@ nav .gradient-btn {
 }
 
 .hero-container {
-  max-width: 1600px;
+  max-width: 2200px;
 }
 
 .hero-title {
@@ -194,31 +194,44 @@ nav .gradient-btn {
 
 .hero-visual {
   position: relative;
-  width: min(1120px, 98vw);
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
-  max-height: 90vh;
+  max-height: 100vh;
+}
+
+@media (min-width: 1920px) {
+  .hero-visual {
+    max-width: 100%;
+  }
 }
 .visual-frame {
   position: relative;
   border-radius: 24px;
   overflow: visible;
-  background: transparent;
-  border: none;
-  box-shadow: none;
+  background: linear-gradient(180deg, #f7e9ff 0%, #e3d5ff 100%);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
   width: 100%;
   height: auto;
+  padding: 20px;
 }
 .visual-img {
   width: 100%;
   height: auto;
-  max-height: 90vh;
+  max-height: 100vh;
   object-fit: contain;
   object-position: center center;
   display: block;
   filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.15));
 }
 .visual-glow {
-  display: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(214, 174, 255, 0.38), rgba(255, 163, 214, 0.38));
+  mix-blend-mode: screen;
+  pointer-events: none;
+  border-radius: 24px;
 }
 .floating-badge {
   position: absolute;
