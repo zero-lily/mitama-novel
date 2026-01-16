@@ -204,12 +204,14 @@ nav .gradient-btn {
   background: transparent;
   border: none;
   box-shadow: none;
+  width: 100%;
+  height: auto;
 }
 .visual-img {
   width: 100%;
   height: auto;
   object-fit: contain;
-  object-position: center bottom;
+  object-position: center center;
   display: block;
   filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.15));
 }
@@ -286,6 +288,10 @@ nav .gradient-btn {
 /* Section backgrounds */
 #hero {
   background: linear-gradient(180deg, #ffffff 0%, #fdfaff 100%);
+}
+
+#hero .hero-visual {
+  overflow: visible;
 }
 
 #news {
