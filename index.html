@@ -34,345 +34,352 @@
 </head>
 
 <body class="bg-surface text-slate-800">
-  
-    <div class="bg-pattern"></div>
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
 
-    <!-- Navigation -->
-    <nav id="navbar" class="fixed top-0 w-full z-50 nav-blur">
-      <div class="container mx-auto px-4 py-4">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center gap-3">
-            <img src="assets/images/logo/logo.png" alt="霞の向こうのみたまさん。" class="h-10 md:h-12 object-contain">
-          </div>
-          <ul class="hidden md:flex space-x-6 text-sm font-medium">
-            <li><a href="#hero" class="nav-link hover:text-accent transition">HOME</a></li>
-            <li><a href="#news" class="nav-link hover:text-accent transition">NEWS</a></li>
-            <li><a href="#story" class="nav-link hover:text-accent transition">STORY</a></li>
-            <li><a href="#characters" class="nav-link hover:text-accent transition">CHARACTERS</a></li>
-            <li><a href="#features" class="nav-link hover:text-accent transition">FEATURES</a></li>
-            <li><a href="#gallery" class="nav-link hover:text-accent transition">GALLERY</a></li>
-            <li><a href="#product" class="nav-link hover:text-accent transition">PRODUCT</a></li>
-            <li><a href="#cast" class="nav-link hover:text-accent transition">CAST</a></li>
-          </ul>
-          <div class="hidden md:flex items-center gap-3">
-            <a href="#product" class="gradient-btn">予約する</a>
-          </div>
-          <button id="menu-toggle" class="md:hidden text-2xl">☰</button>
+  <div class="bg-pattern"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 nav-blur">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo/logo.png" alt="霞の向こうのみたまさん。" class="h-10 md:h-12 object-contain">
         </div>
-        <ul id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 glass p-4 rounded-2xl">
-          <li><a href="#hero" class="block py-2 hover:text-accent transition">HOME</a></li>
-          <li><a href="#news" class="block py-2 hover:text-accent transition">NEWS</a></li>
-          <li><a href="#story" class="block py-2 hover:text-accent transition">STORY</a></li>
-          <li><a href="#characters" class="block py-2 hover:text-accent transition">CHARACTERS</a></li>
-          <li><a href="#features" class="block py-2 hover:text-accent transition">FEATURES</a></li>
-          <li><a href="#gallery" class="block py-2 hover:text-accent transition">GALLERY</a></li>
-          <li><a href="#product" class="block py-2 hover:text-accent transition">PRODUCT</a></li>
-          <li><a href="#cast" class="block py-2 hover:text-accent transition">CAST</a></li>
+        <ul class="hidden md:flex space-x-6 text-sm font-medium">
+          <li><a href="#hero" class="nav-link hover:text-accent transition">HOME</a></li>
+          <li><a href="#news" class="nav-link hover:text-accent transition">NEWS</a></li>
+          <li><a href="#story" class="nav-link hover:text-accent transition">STORY</a></li>
+          <li><a href="#characters" class="nav-link hover:text-accent transition">CHARACTERS</a></li>
+          <li><a href="#features" class="nav-link hover:text-accent transition">FEATURES</a></li>
+          <li><a href="#gallery" class="nav-link hover:text-accent transition">GALLERY</a></li>
+          <li><a href="#product" class="nav-link hover:text-accent transition">PRODUCT</a></li>
+          <li><a href="#cast" class="nav-link hover:text-accent transition">CAST</a></li>
         </ul>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#product" class="gradient-btn">予約する</a>
+        </div>
+        <button id="menu-toggle" class="md:hidden text-2xl">☰</button>
       </div>
-    </nav>
+      <ul id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 glass p-4 rounded-2xl">
+        <li><a href="#hero" class="block py-2 hover:text-accent transition">HOME</a></li>
+        <li><a href="#news" class="block py-2 hover:text-accent transition">NEWS</a></li>
+        <li><a href="#story" class="block py-2 hover:text-accent transition">STORY</a></li>
+        <li><a href="#characters" class="block py-2 hover:text-accent transition">CHARACTERS</a></li>
+        <li><a href="#features" class="block py-2 hover:text-accent transition">FEATURES</a></li>
+        <li><a href="#gallery" class="block py-2 hover:text-accent transition">GALLERY</a></li>
+        <li><a href="#product" class="block py-2 hover:text-accent transition">PRODUCT</a></li>
+        <li><a href="#cast" class="block py-2 hover:text-accent transition">CAST</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="min-h-screen flex items-center relative overflow-visible">
-      <div class="absolute inset-0 hero-overlay"></div>
-      <div class="container mx-auto px-2 lg:px-0 pt-28 pb-24 relative z-10 hero-container">
-        <div class="grid lg:grid-cols-2 gap-6 lg:gap-8 items-start lg:items-center">
-          <div class="space-y-4 text-slate-800">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium hero-chip">
-              <span class="dot"></span>
-              2026年 発売予定
-            </div>
-            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg hero-title">
-              <span class="block md:inline">霞の向こうの</span><span class="block md:inline">みたまさん。</span>
-              <span class="block text-2xl md:text-4xl text-accent font-bold mt-3">ふたりの物語が、ここから始まる</span>
-            </h1>
-            <p class="text-lg text-slate-700 leading-relaxed max-w-2xl">
-              記憶を失った少女「かすみみたま」と主人公のマルチエンディングストーリー。
-            </p>
-            <div class="flex flex-wrap items-center gap-3">
-              <span class="chip">Windows</span>
-              <span class="chip">ビジュアルノベル</span>
-            </div>
-            <div class="flex flex-col sm:flex-row gap-4">
-              <a href="#product" class="gradient-btn text-center">購入する</a>
-              <a href="#news" class="outline-btn text-center">最新情報を見る</a>
-            </div>
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex items-center relative overflow-visible">
+    <div class="absolute inset-0 hero-overlay"></div>
+    <div class="container mx-auto px-2 lg:px-0 pt-32 pb-16 relative z-10 hero-container">
+      <div class="grid lg:grid-cols-[1fr_2fr] gap-6 lg:gap-6 items-start lg:items-center">
+        <div class="space-y-4 text-slate-800">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium hero-chip">
+            <span class="dot"></span>
+            2026年 発売予定
           </div>
-          <div class="relative">
-            <div class="hero-visual">
-              <div class="visual-frame">
-                <div class="visual-glow"></div>
-                <img src="assets/images/characters/KV.png" alt="かすみみたま キービジュアル" class="visual-img">
-              </div>
-              <div class="floating-badge">
-                <span class="text-sm">Featuring</span>
-                <div class="text-lg font-bold">かすみみたま</div>
-              </div>
-            </div>
+          <h1 class="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg hero-title">
+            <span class="block md:inline">霞の向こうの</span><span class="block md:inline">みたまさん。</span>
+            <span class="block text-2xl md:text-4xl text-accent font-bold mt-3">ふたりの物語が、ここから始まる</span>
+          </h1>
+          <p class="text-lg text-slate-700 leading-relaxed max-w-2xl">
+            記憶を失った少女「かすみみたま」と主人公のマルチエンディングストーリー。
+          </p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="chip">Windows</span>
+            <span class="chip">ビジュアルノベル</span>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- News Section -->
-    <section id="news" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="section-header">
-          <span class="section-label">NEWS</span>
-          <h2 class="section-title">最新情報</h2>
-          <p class="section-sub">リリースやイベントのお知らせを更新中</p>
-        </div>
-        <div id="news-list" class="max-w-4xl mx-auto space-y-4">
-          <!-- News items will be loaded from JSON -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Story Section -->
-    <section id="story" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="section-header">
-          <span class="section-label">STORY</span>
-          <h2 class="section-title">儚くも美しい『霞』のような物語。</h2>
-        </div>
-        <div class="max-w-6xl mx-auto glass p-8 md:p-12 rounded-3xl space-y-4 leading-relaxed text-slate-700 text-xl md:text-2xl story-text">
-          <p class="text-2xl md:text-3xl font-semibold">「私のお手伝いをしてください！」
-            </p>
-          <p>格安アパートに入居したあなたのもとに現れた「かすみみたま」という幽霊の少女。</p>
-            <p>同居の許可と引き換えに、生前の『記憶』探しの手伝いを頼まれる。</p>
-            <br>
-          <p>わずかに残る思い出を頼りに、彼女のゆかりの地を訪れながら、</p>
-          <p>何気ない会話をする中で「人間と幽霊」という関係が少しずつ揺らいでいく。</p>
-          <br>  
-          <p>軽快な幽霊ジョークにヒヤヒヤさせられながら、これからのことを考える。</p>
-          <p>記憶を取り戻した彼女は……いったいどうなるんだろう？</p>
-          <p>「あなたはちゃんと、人間と関わって生きていってください」</p>
-          <br>
-          <p class="text-2xl md:text-3xl font-semibold text-accent">幽霊は未練を断ち切って成仏するというけれど……</p>
-          <p class="text-2xl md:text-3xl font-semibold text-accent">ふたりの関係も同じように、ただ消えていくだけなんだろうか――</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Characters Section -->
-    <section id="characters" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="section-header">
-          <span class="section-label">CHARACTERS</span>
-          <h2 class="section-title">キャラクター</h2>
-        </div>
-        <div id="characters-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <!-- Characters will be loaded from JSON -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="section-header">
-          <span class="section-label">GALLERY</span>
-          <h2 class="section-title">ギャラリー</h2>
-          <p class="section-sub">スチル・イベントCGを先行公開</p>
-        </div>
-        <div class="max-w-5xl mx-auto">
-          <div class="glass p-12 md:p-16 rounded-3xl text-center">
-            <div class="text-6xl md:text-8xl mb-6">🔒</div>
-            <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">COMING SOON</h3>
-            <p class="text-lg md:text-xl text-slate-600">イラストは準備中です。公開をお楽しみに！</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#product" class="gradient-btn text-center">購入する</a>
+            <a href="#news" class="outline-btn text-center">最新情報を見る</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Cast Section -->
-    <section id="cast" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="section-header">
-          <span class="section-label">CAST</span>
-          <h2 class="section-title">主演</h2>
-          <p class="section-sub">かすみみたまを演じる</p>
-        </div>
-        <div class="max-w-4xl mx-auto">
-          <div class="glass p-8 md:p-12 rounded-3xl">
-            <div class="flex flex-col md:flex-row gap-8 items-center">
-              <div class="flex-shrink-0">
-                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                  <img src="assets/images/icon/icon_mitama.png" alt="かすみみたま" class="w-full h-full object-cover object-center">
-                </div>
-              </div>
-              <div class="flex-1 text-center md:text-left">
-                <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">かすみみたま</h3>
-                <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-                  かすみみたま役の、怪談系幽霊VTuberかすみみたまです！  <br>
-                  もしかしたらあるかもしれないifの世界の私を演じています。 <br>
-                  物語を通して、私の記憶を一緒に探してください！
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                  <a href="https://www.youtube.com/channel/UC5RTWIYDif9txemHybgy5nw" target="_blank"
-                    rel="noreferrer noopener" class="outline-btn flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path
-                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                    YouTube
-                  </a>
-                  <a href="https://x.com/kasumi_mitama" target="_blank" rel="noreferrer noopener"
-                    class="outline-btn flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path
-                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                    </svg>
-                    X (Twitter)
-                  </a>
-                </div>
-              </div>
+        <div class="relative flex justify-center">
+          <div class="hero-visual">
+            <div class="visual-frame">
+              <div class="visual-glow"></div>
+              <img src="assets/images/characters/KV.png" alt="かすみみたま キービジュアル" class="visual-img">
+            </div>
+            <div class="floating-badge">
+              <span class="text-sm">Featuring</span>
+              <div class="text-lg font-bold">かすみみたま</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Creators Section -->
-    <section id="creators" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="section-header">
-          <span class="section-label">CREATORS</span>
-          <h2 class="section-title">クリエイター</h2>
-          <p class="section-sub">イラストレーター / シナリオライター</p>
+  <!-- News Section -->
+  <section id="news" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">NEWS</span>
+        <h2 class="section-title">最新情報</h2>
+        <p class="section-sub">リリースやイベントのお知らせを更新中</p>
+      </div>
+      <div id="news-list" class="max-w-4xl mx-auto space-y-4">
+        <!-- News items will be loaded from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section id="story" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">STORY</span>
+        <h2 class="section-title">儚くも美しい『霞』のような物語。</h2>
+      </div>
+      <div
+        class="max-w-6xl mx-auto glass p-8 md:p-12 rounded-3xl space-y-4 leading-relaxed text-slate-700 text-xl md:text-2xl story-text">
+        <p class="text-2xl md:text-3xl font-semibold">「私のお手伝いをしてください！」
+        </p>
+        <p>格安アパートに入居したあなたのもとに現れた「かすみみたま」という幽霊の少女。</p>
+        <p>同居の許可と引き換えに、生前の『記憶』探しの手伝いを頼まれる。</p>
+        <br>
+        <p>わずかに残る思い出を頼りに、彼女のゆかりの地を訪れながら、</p>
+        <p>何気ない会話をする中で「人間と幽霊」という関係が少しずつ揺らいでいく。</p>
+        <br>
+        <p>軽快な幽霊ジョークにヒヤヒヤさせられながら、これからのことを考える。</p>
+        <p>記憶を取り戻した彼女は……いったいどうなるんだろう？</p>
+        <p>「あなたはちゃんと、人間と関わって生きていってください」</p>
+        <br>
+        <p class="text-2xl md:text-3xl font-semibold text-accent">幽霊は未練を断ち切って成仏するというけれど……</p>
+        <p class="text-2xl md:text-3xl font-semibold text-accent">ふたりの関係も同じように、ただ消えていくだけなんだろうか――</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Characters Section -->
+  <section id="characters" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">CHARACTERS</span>
+        <h2 class="section-title">キャラクター</h2>
+      </div>
+      <div id="characters-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <!-- Characters will be loaded from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">GALLERY</span>
+        <h2 class="section-title">ギャラリー</h2>
+        <p class="section-sub">スチル・イベントCGを先行公開</p>
+      </div>
+      <div class="max-w-5xl mx-auto">
+        <div class="glass p-12 md:p-16 rounded-3xl text-center">
+          <div class="text-6xl md:text-8xl mb-6">🔒</div>
+          <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">COMING SOON</h3>
+          <p class="text-lg md:text-xl text-slate-600">イラストは準備中です。公開をお楽しみに！</p>
         </div>
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 creators-grid">
-          <div class="glass p-8 md:p-12 rounded-3xl creator-card">
-            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start creator-row">
-              <div class="flex-shrink-0">
-                <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                  <img src="assets/images/icon/icon_kumin.png" alt="北爪くみん" class="w-full h-full object-cover object-center">
-                </div>
-              </div>
-              <div class="flex-1 text-center md:text-left">
-                <div class="text-sm tracking-[0.2em] text-slate-500 mb-2 creator-role">ILLUSTRATOR</div>
-                <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800 creator-name">北爪くみん</h3>
-                <p class="text-lg text-slate-700 mb-6 leading-relaxed creator-comment">
-                  キャラクターデザイン・イラストを担当。
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                  <a href="https://www.youtube.com/channel/UCDdxgzgw2RGWluKcG7MAVRA" target="_blank"
-                    rel="noreferrer noopener" class="outline-btn flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path
-                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                    YouTube
-                  </a>
-                  <a href="https://x.com/kitazume_kumin" target="_blank" rel="noreferrer noopener"
-                    class="outline-btn flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path
-                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                    </svg>
-                    X (Twitter)
-                  </a>
-                </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cast Section -->
+  <section id="cast" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">CAST</span>
+        <h2 class="section-title">主演</h2>
+        <p class="section-sub">かすみみたまを演じる</p>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <div class="glass p-8 md:p-12 rounded-3xl">
+          <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="flex-shrink-0">
+              <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img src="assets/images/icon/icon_mitama.png" alt="かすみみたま"
+                  class="w-full h-full object-cover object-center">
               </div>
             </div>
-          </div>
-          <div class="glass p-8 md:p-12 rounded-3xl creator-card">
-            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start creator-row">
-              <div class="flex-shrink-0">
-                <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                  <img src="assets/images/icon/icon_pyoi.jpeg" alt="浅倉ぴよい" class="w-full h-full object-cover object-center">
-                </div>
-              </div>
-              <div class="flex-1 text-center md:text-left">
-                <div class="text-sm tracking-[0.2em] text-slate-500 mb-2 creator-role">SCENARIO WRITER</div>
-                <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800 creator-name">浅倉ぴよい</h3>
-                <p class="text-lg text-slate-700 mb-6 leading-relaxed creator-comment">
-                  かすみみたまさんのゲームシナリオを担当させていただきました。<br>
-                  独自の魅力をお持ちの方ですので、とっても楽しく、けれどどこかちょっと寂しく、物語を作り上げることができました。<br>
-                  『霞の向こうのみたまさん。』よろしくお願いいたします！
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                  <a href="https://x.com/pyo_pyoi_pyoi" target="_blank" rel="noreferrer noopener"
-                    class="outline-btn flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path
-                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                    </svg>
-                    X (Twitter)
-                  </a>
-                </div>
+            <div class="flex-1 text-center md:text-left">
+              <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">かすみみたま</h3>
+              <p class="text-lg text-slate-700 mb-6 leading-relaxed">
+                かすみみたま役の、怪談系幽霊VTuberかすみみたまです！ <br>
+                もしかしたらあるかもしれないifの世界の私を演じています。 <br>
+                物語を通して、私の記憶を一緒に探してください！
+              </p>
+              <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                <a href="https://www.youtube.com/channel/UC5RTWIYDif9txemHybgy5nw" target="_blank"
+                  rel="noreferrer noopener" class="outline-btn flex items-center gap-2">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                  </svg>
+                  YouTube
+                </a>
+                <a href="https://x.com/kasumi_mitama" target="_blank" rel="noreferrer noopener"
+                  class="outline-btn flex items-center gap-2">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                  X (Twitter)
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Product Section -->
-    <section id="product" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="section-header">
-          <span class="section-label">PRODUCT</span>
-          <h2 class="section-title">製品情報</h2>
-          <p class="section-sub">プラットフォーム・価格・エディション</p>
-        </div>
-        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
-          <div class="product-card md:col-span-2">
-            <h3 class="text-2xl font-bold mb-4">霞の向こうのみたまさん。</h3>
-            <table class="w-full text-left text-sm md:text-base">
-              <tr class="border-b border-white/40">
-                <td class="py-3 font-semibold text-slate-700">ジャンル</td>
-                <td class="py-3 text-slate-800">ビジュアルノベル</td>
-              </tr>
-              <tr class="border-b border-white/40">
-                <td class="py-3 font-semibold text-slate-700">対応予定機種</td>
-                <td class="py-3 text-slate-800"> Windows 10/11</td>
-              </tr>
-              <tr class="border-b border-white/40">
-                <td class="py-3 font-semibold text-slate-700">発売日</td>
-                <td class="py-3 text-slate-800">2026年春 発売予定</td>
-              </tr>
-              <tr class="border-b border-white/40">
-                <td class="py-3 font-semibold text-slate-700">価格</td>
-                <td class="py-3 text-slate-800 space-y-1">
-                  <div>通常版：3,600円（税抜）/3,960円（税込）</div>
-                  <div>デジタル特典付き限定版：6,600円（税抜）/7,260円（税込）</div>
-                  <div>オーダーメイドお名前呼び版：18,000円（税抜）/19,800円（税込）</div>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="product-card flex flex-col gap-4">
-            <div>
-              <div class="text-sm text-slate-500">購入</div>
-              <div class="text-xl font-bold text-slate-800">かすみみたまの雑貨屋さん
+  <!-- Creators Section -->
+  <section id="creators" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">CREATORS</span>
+        <h2 class="section-title">クリエイター</h2>
+        <p class="section-sub">イラストレーター / シナリオライター</p>
+      </div>
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 creators-grid">
+        <div class="glass p-8 md:p-12 rounded-3xl creator-card">
+          <div class="flex flex-col md:flex-row gap-8 items-center md:items-start creator-row">
+            <div class="flex-shrink-0">
+              <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img src="assets/images/icon/icon_kumin.png" alt="北爪くみん"
+                  class="w-full h-full object-cover object-center">
               </div>
             </div>
-            <a href="https://kasumimitama.booth.pm/" class="gradient-btn text-center w-full">購入はこちら</a>
-            <div class="text-xs text-slate-500 leading-relaxed">
-              素材・情報等はすべて開発中のものであり、予告なく変更される場合があります。
+            <div class="flex-1 text-center md:text-left">
+              <div class="text-sm tracking-[0.2em] text-slate-500 mb-2 creator-role">ILLUSTRATOR</div>
+              <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800 creator-name">北爪くみん</h3>
+              <p class="text-lg text-slate-700 mb-6 leading-relaxed creator-comment">
+                かすみみたまちゃんのキャラクターデザイン・イラストを担当させていただきました！<br>
+                生活の中に幽霊のみたまちゃんがいる…そんな日常的な非日常。<br>
+                ともに過ごすみたまちゃんの感情や情景を想像して、わくわくドキドキしながら描かせていただきました！<br>
+                みたまちゃんとの『記憶』探し、イラストとともに楽しんでいただけたら嬉しいです！
+              </p>
+              <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                <a href="https://www.youtube.com/channel/UCDdxgzgw2RGWluKcG7MAVRA" target="_blank"
+                  rel="noreferrer noopener" class="outline-btn flex items-center gap-2">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                  </svg>
+                  YouTube
+                </a>
+                <a href="https://x.com/kitazume_kumin" target="_blank" rel="noreferrer noopener"
+                  class="outline-btn flex items-center gap-2">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                  X (Twitter)
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glass p-8 md:p-12 rounded-3xl creator-card">
+          <div class="flex flex-col md:flex-row gap-8 items-center md:items-start creator-row">
+            <div class="flex-shrink-0">
+              <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img src="assets/images/icon/icon_pyoi.jpeg" alt="浅倉ぴよい"
+                  class="w-full h-full object-cover object-center">
+              </div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+              <div class="text-sm tracking-[0.2em] text-slate-500 mb-2 creator-role">SCENARIO WRITER</div>
+              <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800 creator-name">浅倉ぴよい</h3>
+              <p class="text-lg text-slate-700 mb-6 leading-relaxed creator-comment">
+                かすみみたまさんのゲームシナリオを担当させていただきました。<br>
+                独自の魅力をお持ちの方ですので、とっても楽しく、けれどどこかちょっと寂しく、物語を作り上げることができました。<br>
+                『霞の向こうのみたまさん。』よろしくお願いいたします！
+              </p>
+              <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                <a href="https://x.com/pyo_pyoi_pyoi" target="_blank" rel="noreferrer noopener"
+                  class="outline-btn flex items-center gap-2">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                  X (Twitter)
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-footer py-10">
-      <div class="container mx-auto px-4 text-center space-y-3">
-        <div class="flex justify-center gap-3 text-sm text-gray-300">
-          <span>© 2026 霞の向こうのみたまさん。</span>
-          <span>All Rights Reserved.</span>
-        </div>
-        <p class="text-gray-400 text-xs">素材・情報等はすべて開発中のものであり、予告なく変更される場合がございます。</p>
+  <!-- Product Section -->
+  <section id="product" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="section-header">
+        <span class="section-label">PRODUCT</span>
+        <h2 class="section-title">製品情報</h2>
+        <p class="section-sub">プラットフォーム・価格・エディション</p>
       </div>
-    </footer>
+      <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+        <div class="product-card md:col-span-2">
+          <h3 class="text-2xl font-bold mb-4">霞の向こうのみたまさん。</h3>
+          <table class="w-full text-left text-sm md:text-base">
+            <tr class="border-b border-white/40">
+              <td class="py-3 font-semibold text-slate-700">ジャンル</td>
+              <td class="py-3 text-slate-800">ビジュアルノベル</td>
+            </tr>
+            <tr class="border-b border-white/40">
+              <td class="py-3 font-semibold text-slate-700">対応予定機種</td>
+              <td class="py-3 text-slate-800"> Windows 10/11</td>
+            </tr>
+            <tr class="border-b border-white/40">
+              <td class="py-3 font-semibold text-slate-700">発売日</td>
+              <td class="py-3 text-slate-800">2026年春 発売予定</td>
+            </tr>
+            <tr class="border-b border-white/40">
+              <td class="py-3 font-semibold text-slate-700">価格</td>
+              <td class="py-3 text-slate-800 space-y-1">
+                <div>通常版：3,600円（税抜）/3,960円（税込）</div>
+                <div>デジタル特典付き限定版：6,600円（税抜）/7,260円（税込）</div>
+                <div>オーダーメイドお名前呼び版：18,000円（税抜）/19,800円（税込）</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="product-card flex flex-col gap-4">
+          <div>
+            <div class="text-sm text-slate-500">購入</div>
+            <div class="text-xl font-bold text-slate-800">かすみみたまの雑貨屋さん
+            </div>
+          </div>
+          <a href="https://kasumimitama.booth.pm/" class="gradient-btn text-center w-full">購入はこちら</a>
+          <div class="text-xs text-slate-500 leading-relaxed">
+            素材・情報等はすべて開発中のものであり、予告なく変更される場合があります。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-footer py-10">
+    <div class="container mx-auto px-4 text-center space-y-3">
+      <div class="flex justify-center gap-3 text-sm text-gray-300">
+        <span>© 2026 霞の向こうのみたまさん。</span>
+        <span>All Rights Reserved.</span>
+      </div>
+      <p class="text-gray-400 text-xs">素材・情報等はすべて開発中のものであり、予告なく変更される場合がございます。</p>
+    </div>
+  </footer>
 
   <!-- Gallery Modal -->
   <div id="gallery-modal" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center">
